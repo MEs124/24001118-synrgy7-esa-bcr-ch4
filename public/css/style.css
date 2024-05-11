@@ -1,0 +1,552 @@
+:root {
+  --abuabu: #f1f3ff;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+nav,
+section,
+article,
+aside,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the body */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+  background-color: #f1f3ff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation Styles */
+.nav {
+  float: right;
+}
+
+nav {
+  display: block;
+  background-color: #f1f3ff;
+  padding: 20px 20px 20px;
+}
+
+nav a {
+  color: #f1f3ff;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: right;
+  border-right: 0px solid #000000;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.register-btn {
+  background-color: #4caf50; /* Green background for the register button */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Main content Styles */
+main {
+  padding: 20px;
+  background: #fff;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article header h2 {
+  background: none;
+  padding: 10px;
+  margin: 0;
+  color: #333;
+}
+
+article p {
+  padding: 15px 0;
+}
+
+/* Sidebar Styles */
+aside {
+  background: #e2e2e2;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background: none;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  header,
+  nav,
+  main,
+  footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  nav {
+    background: none;
+    padding: 0px 10px 0px;
+  }
+
+  nav a {
+    padding: 10px 10px 10px;
+    display: block;
+  }
+
+  /* Two column layout */
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  article {
+    flex: 3;
+    margin-right: 20px;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav,
+  article,
+  aside {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container-fluid {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f1f3ff; /* Assuming a blue background */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1440px; /* Adjust as needed */
+  max-height: 504px;
+  margin: auto;
+}
+
+.text-section {
+  color: black;
+  flex: 1;
+}
+
+.image-section {
+  flex: 1;
+  text-align: right; /* Aligns the image to the right */
+}
+
+.image-section {
+  max-width: 1440px;
+  height: auto;
+}
+
+h1 {
+  font-size: 36px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #115e13; /* Adjust color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc5200; /* Darker shade for hover effect */
+}
+
+img {
+  max-width: 100%; /* Makes image responsive */
+  height: auto;
+}
+
+/* content baru */
+
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin: 40px;
+}
+
+.image-section-container {
+  max-width: 459px;
+  position: relative;
+  flex: 1;
+  flex-basis: 10%; /* adjust size accordingly */
+}
+
+.text-section-container {
+  flex-basis: 50%; /* adjust size accordingly */
+  padding-left: 20px; /* adjust spacing accordingly */
+}
+
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.image-section-container {
+  max-width: 100%; /* or other desired size */
+  position: relative;
+}
+
+.image-section-container img {
+  max-width: 100%;
+  border-radius: 0%; /* Assuming the image is round */
+}
+
+.text-section-container {
+  padding-left: 20px;
+}
+
+.text-section-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-section-container p {
+  margin-bottom: 30px;
+}
+
+.text-section-container table {
+  border-collapse: collapse;
+}
+
+.text-section-container td {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  list-style: none;
+  border: none; /* Remove borders if not needed */
+}
+
+.text-section-container td:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Adjust to match the desired checkmark color */
+  font-size: 1em; /* Adjust size as needed */
+}
+
+@media (min-width: 769px) {
+  .image-section-container img {
+    max-width: 100%; /* Full width of its container */
+    height: auto;
+  }
+}
+
+/* content baru */
+
+.why-us-container {
+  text-align: left;
+  padding: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.why-us-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.why-us-container p {
+  color: #666;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center; /* Center the content inside the card */
+  position: relative; /* For absolute positioning of the logo */
+}
+
+.card-logo {
+  width: 32px; /* Width of the logo */
+  height: 32px; /* Height of the logo */
+  position: absolute; /* Position the logo absolutely */
+  top: 20px; /* Half outside the card */
+  left: 16px; /* Spacing from the left */
+}
+
+.card h3 {
+  color: #333;
+  margin: 20px 0 10px; /* Add top margin to give space from logo */
+  text-align: left;
+}
+
+.card h5 {
+  color: #333;
+  margin: 40px 0 10px; /* Add top margin to give space from logo */
+  text-align: left;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Add additional media queries if needed for responsiveness */
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
+/* content baru */
+
+.cta-container {
+  background-color: #004aad;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 1000px; /* Adjust the max-width as needed */
+  margin: 50px auto; /* This centers the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+
+.cta-container h1 {
+  margin-bottom: 20px;
+  font-size: 2em; /* Adjust size as needed */
+}
+
+.cta-container p {
+  margin-bottom: 30px;
+  font-size: 1em; /* Adjust size as needed */
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em; /* Adjust size as needed */
+  color: #004aad;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e7e7e7; /* Color changes on hover */
+}
+
+/* carousel */
+
+.testimonial-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+.rating {
+  color: #ffd700; /* gold color for stars */
+}
+
+.star {
+  font-size: 20px;
+}
+
+.item {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 459px;
+  height: 270px;
+}
+
+blockquote p {
+  font-style: arial;
+  color: #555;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  color: #777;
+  font-style: normal;
+}
+
+/* Owl carousel specific styles */
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 0 5px;
+}
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+  font-size: 20px;
+  color: #333;
+}
+
+.owl-dot.active span,
+.owl-dot:hover span {
+  background-color: green;
+}
+
+/* Accordion */
+.container {
+  width: 80%;
+  margin: 50px auto; /* This centers the container */
+}
+
+/* footer */
+
+.footer {
+  background-color: #f8f9fa; /* Light grey background */
+  color: black;
+  border-top: 1px solid #ddd; /* Add a top border */
+}
+
+.footer p,
+.footer h5 {
+  padding-bottom: 15px; /* Spacing under the text */
+}
+
+.footer a {
+  color: black;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+  color: #555; /* Darker grey on hover */
+}
+
+.list-inline-item {
+  padding: 0 10px;
+}
+
+.list-inline-item i {
+  font-size: 20px; /* Adjust icon size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .footer .col-md-6 {
+    /* Ensure full width on medium devices */
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer .text-center {
+    /* Center text on medium devices */
+    text-align: center !important;
+  }
+}
